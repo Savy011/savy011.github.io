@@ -9,7 +9,10 @@
     "astro": "astro"
   },
   "dependencies": {
-    "astro": "^5.13.3"
+    "@tailwindcss/vite": "^4.1.12",
+    "astro": "^5.13.3",
+    "phosphor-astro": "^2.1.0",
+    "tailwindcss": "^4.1.12"
   },
   "devDependencies": {
     "@antfu/eslint-config": "^5.2.1",
