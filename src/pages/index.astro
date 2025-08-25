@@ -1,36 +1,38 @@
 ---
-import {Image} from 'astro:assets';
-import Layout from '../layouts/Layout.astro';
+import { Image } from 'astro:assets'
+import Layout from '../layouts/Layout.astro'
 
-import Github from 'phosphor-astro/GithubLogoFill.astro';
-import LinkedIn from 'phosphor-astro/LinkedinLogoFill.astro';
+import Github from 'phosphor-astro/GithubLogoFill.astro'
+import LinkedIn from 'phosphor-astro/LinkedinLogoFill.astro'
 import Email from 'phosphor-astro/EnvelopeSimple.astro'
 
-import PROFILE from '../assets/me.jpeg';
+import PROFILE from '../assets/me.jpeg'
 ---
 
 <Layout>
-	<div class="h-screen w-full overflow-x-hidden overflow-y-auto flex items-center justify-center">
-		<div class="flex flex-col mx-auto items-center justify-center space-y-2">
-			<div class="relative aspect-square size-20">
-				<Image class="select-none rounded-full absolute" src={PROFILE} alt="image of me"/>
-			</div>
+  <div class="h-screen w-full overflow-x-hidden overflow-y-auto flex items-center justify-center">
+    <div class="flex flex-col mx-auto items-center justify-center md:flex-row space-y-2 md:space-y-0 md:space-x-4">
+      <div class="relative aspect-square size-30">
+        <Image class="select-none rounded-lg absolute" src={PROFILE} alt="image of me" />
+      </div>
 
-			<h1 class="font-bold">Harmanjeet Singh Sahota</h1>
+      <div class="space-y-2 flex flex-col items-center justify-center md:justify-start">
+        <h1 class="font-bold text-2xl">Harmanjeet Singh Sahota</h1>
 
-			<p>Building cool tech for cool people</p>
+        <p>Building cool tech for cool people</p>
 
-			<div class="flex flex-row gap-1.5">
-				<a href="https://www.github.com/Savy011" target="_blank" class="social-btn">
-					<Github class="fill-black size-6"  />
-				</a>
-				<a href="https://www.linkedin.com/in/harmanjeet-singh-sahota-336b0128a/" target="_blank" class="social-btn">
-					<LinkedIn class="fill-black size-5"  />
-				</a>
-				<a href="mailto:savy.novachez011@proton.me" target="_blank"class="social-btn">
-					<Email class="fill-black size-6"  />
-				</a>
-			</div>
-		</div>
-	</div>
+        <div class="flex flex-row gap-1.5">
+          <a href="https://www.github.com/Savy011" target="_blank" class="social-btn">
+            <Github class="fill-black size-8" />
+          </a>
+          <a href="https://www.linkedin.com/in/harmanjeet-singh-sahota-336b0128a/" target="_blank" class="social-btn">
+            <LinkedIn class="fill-black size-8" />
+          </a>
+          <a href="mailto:savy.novachez011@proton.me" target="_blank" class="social-btn">
+            <Email class="fill-black size-8" />
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
 </Layout>

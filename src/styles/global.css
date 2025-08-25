@@ -1,7 +1,7 @@
-@import "tailwindcss";
+@import 'tailwindcss';
 
 @layer components {
-	.social-btn {
-		@apply p-1 border border-black rounded-lg flex items-center justify-center aspect-square hover:-translate-y-1 duration-100 ease-in-out;
-	}
+  .social-btn {
+    @apply border-2 border p-2 border-black rounded-lg flex items-center justify-center hover:-translate-y-1 duration-100 ease-in-out;
+  }
 }
