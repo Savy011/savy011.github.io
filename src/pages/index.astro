@@ -20,6 +20,10 @@ const OPTIMIZED_PROFILE = await getImage({
 ---
 
 <Layout>
+  <Fragment slot="head">
+    <link rel="preload" href={OPTIMIZED_PROFILE.src} as="image" />
+  </Fragment>
+
   <div class="h-screen w-full overflow-x-hidden overflow-y-auto flex items-center justify-center">
     <div class="flex flex-col mx-auto items-center justify-center md:flex-row space-y-2 md:space-y-0 md:space-x-4">
       <div
