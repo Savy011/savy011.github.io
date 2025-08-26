@@ -1,4 +1,5 @@
 ---
+import { Font } from 'astro:assets'
 import '../styles/global.css'
 ---
 
@@ -14,8 +15,10 @@ import '../styles/global.css'
     <title>Harman Sahota</title>
 
     <meta name="darkreader-lock" />
+
+    <Font cssVariable="--font-archivo-narrow" preload />
   </head>
-  <body class="bg-nyanza text-charcoal selection:bg-charcoal selection:text-nyanza">
+  <body class="font-body bg-nyanza text-charcoal selection:bg-charcoal selection:text-nyanza">
     <slot />
   </body>
 </html>

@@ -3,6 +3,8 @@
 @theme inline {
   --color-charcoal: #2F3E46;
   --color-nyanza: #EAF4D3;
+
+  --font-body: var(--font-archivo-narrow);
 }
 
 @layer components {
