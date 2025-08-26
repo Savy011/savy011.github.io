@@ -1,14 +1,14 @@
 @import 'tailwindcss';
 
 @theme inline {
-  --color-charcoal: #2F3E46;
-  --color-nyanza: #EAF4D3;
+  --color-charcoal: #2f3e46;
+  --color-nyanza: #eaf4d3;
 
   --font-body: var(--font-archivo-narrow);
 }
 
 @layer components {
   .social-btn {
-    @apply border-2 border-charcoal hover:bg-charcoal/10 p-2 rounded-sm hover:rounded-3xl flex items-center justify-center  duration-100 ease-in-out;
+    @apply border-2 border-charcoal hover:bg-charcoal/10 p-2 rounded-sm hover:rounded-3xl flex items-center justify-center duration-100 ease-in-out;
   }
 }
