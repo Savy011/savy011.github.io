@@ -15,7 +15,7 @@
 }
 
 @keyframes pan-bg {
-    100% {
-        background-position: var(--bg-size) var(--bg-size);
-    }
+  100% {
+    background-position: var(--bg-size) var(--bg-size);
+  }
 }
