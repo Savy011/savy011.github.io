@@ -22,9 +22,11 @@ const OPTIMIZED_PROFILE = await getImage({
 <Layout>
   <div class="h-screen w-full overflow-x-hidden overflow-y-auto flex items-center justify-center">
     <div class="flex flex-col mx-auto items-center justify-center md:flex-row space-y-2 md:space-y-0 md:space-x-4">
-      <div class="aspect-square size-30 rounded-lg overflow-hidden">
+      <div
+        class="group aspect-square size-36 rounded-lg overflow-hidden scale-84 -rotate-z-11 translate-x-[15%] origin-[0_100%]"
+      >
         <Image
-          class="select-none"
+          class="select-none w-full h-full object-cover block scale-120 rotate-z-11"
           alt="image of me"
           src={OPTIMIZED_PROFILE.src}
           width={OPTIMIZED_PROFILE.attributes.width}
@@ -32,13 +34,17 @@ const OPTIMIZED_PROFILE = await getImage({
         />
       </div>
 
-      <div class="space-y-2 flex flex-col items-center justify-center md:justify-start">
-        <h1 class="font-bold text-2xl">Harmanjeet Singh Sahota</h1>
+      <div class="space-y- flex flex-col items-center justify-center md:justify-start">
+        <h1 class="font-extrabold text-2xl">Harmanjeet Singh Sahota</h1>
 
         <p>Building cool things for cool people</p>
 
-        <div class="flex flex-row gap-1">
-          <a href="https://www.github.com/Savy011" target="_blank" class="social-btn rounded-l-3xl pl-3 hover:pl-2 hover:ml-1">
+        <div class="flex flex-row gap-1 mt-2">
+          <a
+            href="https://www.github.com/Savy011"
+            target="_blank"
+            class="social-btn rounded-l-3xl pl-3 hover:pl-2 hover:ml-1"
+          >
             <Github class="fill-charcoal size-8" />
           </a>
           <a href="https://www.are.na/harman-sahota/channels" target="_blank" class="social-btn">
@@ -47,7 +53,11 @@ const OPTIMIZED_PROFILE = await getImage({
           <a href="https://www.linkedin.com/in/harmanjeet-singh-sahota-336b0128a/" target="_blank" class="social-btn">
             <LinkedIn class="fill-charcoal size-8" />
           </a>
-          <a href="mailto:savy.novachez011@proton.me" target="_blank" class="social-btn rounded-r-3xl pr-3 hover:pr-2 hover:mr-1">
+          <a
+            href="mailto:savy.novachez011@proton.me"
+            target="_blank"
+            class="social-btn rounded-r-3xl pr-3 hover:pr-2 hover:mr-1"
+          >
             <Email class="fill-charcoal size-8" />
           </a>
         </div>
