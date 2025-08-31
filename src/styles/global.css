@@ -5,12 +5,13 @@
   --color-nyanza: #eaf4d3;
 
   --font-body: var(--font-archivo-narrow);
+  --font-heading: var(--font-rader);
   --bg-flowers: url('/src/assets/bg.svg');
 }
 
 @layer components {
   .social-btn {
-    @apply bg-nyanza/10 backdrop-blur-sm border-2 border-charcoal hover:brightness-90 p-2 rounded-sm hover:rounded-3xl flex items-center justify-center duration-100 ease-in-out;
+    @apply bg-nyanza/10 backdrop-blur-[2px] border-2 border-charcoal hover:brightness-90 p-2 rounded-sm hover:rounded-3xl flex items-center justify-center duration-100 ease-in-out;
   }
 }
 
