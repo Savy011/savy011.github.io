@@ -1,0 +1,28 @@
+---
+import PROFILE from '../assets/me.jpeg'
+
+import { Image, getImage } from 'astro:assets'
+
+const OPTIMIZED_PROFILE = await getImage({
+  src: PROFILE,
+  format: 'webp',
+  width: 1073,
+  height: 1073,
+})
+---
+
+<Fragment slot="head">
+  <link rel="preload" href={OPTIMIZED_PROFILE.src} as="image" />
+</Fragment>
+
+<div
+  class="size-40 rounded-lg overflow-hidden scale-84 -rotate-z-11 m-4 hover:rotate-0 transition-transform duration-100"
+>
+  <Image
+    class="select-none w-full h-full object-cover block scale-120 rotate-z-11"
+    alt="image of me"
+    src={OPTIMIZED_PROFILE.src}
+    width={OPTIMIZED_PROFILE.attributes.width}
+    height={OPTIMIZED_PROFILE.attributes.height}
+  />
+</div>
