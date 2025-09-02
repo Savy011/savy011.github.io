@@ -3,6 +3,9 @@
 @theme inline {
   --color-charcoal: #2f3e46;
   --color-nyanza: #eaf4d3;
+  --color-thistle: #d3c0d2;
+  --color-bittersweet: #ee6055;
+  --color-persian-red: #cc2936;
 
   --font-body: var(--font-archivo-narrow);
   --font-heading: var(--font-rader);
@@ -11,7 +14,7 @@
 
 @layer components {
   .social-btn {
-    @apply bg-nyanza/10 backdrop-blur-[2px] border-2 border-charcoal hover:brightness-90 p-2 rounded-sm hover:rounded-3xl flex items-center justify-center duration-100 ease-in-out;
+    @apply bg-persian-red/10 hover:bg-persian-red/40 backdrop-blur-[2px] border-2 border-charcoal hover:brightness-90 p-2 hover:rounded-full flex items-center justify-center duration-100 ease-in-out;
   }
 }
 
