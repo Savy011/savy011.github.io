@@ -1,7 +1,7 @@
 ---
 import { Font } from 'astro:assets'
 
-import '../styles/global.css'
+import '$styles/global.css'
 ---
 
 <!doctype html>
@@ -14,7 +14,6 @@ import '../styles/global.css'
     <meta name="theme-color" content="#EAF4D3" />
 
     <title>Harmanjeet Singh Sahota</title>
-    <meta name="darkreader-lock" />
 
     <meta name="description" content="Building cool things for cool people" />
 
@@ -22,9 +21,10 @@ import '../styles/global.css'
     <meta property="og:type" content="website" />
     <meta property="og:description" content="Building cool things for cool people" />
 
+    <meta name="darkreader-lock" />
     <Font cssVariable="--font-archivo-narrow" preload />
   </head>
-  <body class="font-body bg-nyanza text-charcoal selection:bg-charcoal selection:text-nyanza">
+  <body class="bg-nyanza text-charcoal selection:bg-charcoal selection:text-nyanza">
     <slot />
   </body>
 </html>
