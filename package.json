@@ -8,7 +8,7 @@
     "preview": "astro preview",
     "astro": "astro",
     "lint": "eslint",
-    "format": "eslint --fix"
+    "lint:fix": "eslint --fix"
   },
   "dependencies": {
     "@fontsource-variable/archivo-narrow": "^5.2.6",
