@@ -4,6 +4,8 @@ import { defineConfig, fontProviders } from 'astro/config'
 
 // https://astro.build/config
 export default defineConfig({
+  site: 'https://savy011.github.io',
+  base: '/',
   vite: {
     plugins: [tailwindcss()],
   },
